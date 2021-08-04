@@ -1,0 +1,50 @@
+.bigimage {
+    width: 97vw;
+    height: 55vw;
+    display: block;
+    margin-left: 0.5vw;
+}
+.big {
+    width: 97vw;
+    display: inline-flex;
+    margin-right: 2vw;
+}
+.number {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 21px;
+    float: left;
+    margin-left: 0.4vw;
+}
+.text {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 21px;
+    float: right;
+}
+/*피씨버전*/
+@media all and (min-width: 1024px) {
+
+}
+/*테블릿버전*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .number {
+        display: none;
+    }
+    .text {
+        padding-top: 0.3vw;
+        margin-left: 0.5vw;
+        float: left;
+    }
+}
+/*모바일버전*/
+@media all and (max-width: 767px) {
+    .number {
+        display: none;
+    }
+    .text {
+        padding-top: 0.3vw;
+        margin-left: 0.5vw;
+        float: left;
+    }
+    .big {
+    }
+}
