@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    margin-left: 1.2rem;
+    overflow-x: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.ldiv {
+    display: flex;
+    width: 11vw;
+}
+.goodstext {
+    width: 11vw;
+}
+.miniimage {
+    width: 11vw;
+    height: 15vw;
+    overflow: hidden;
+}
+.little {
+    margin-right: 1.2rem;
+}
+.goodsname {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+}
+/*피씨버전*/
+@media all and (min-width: 1024px) {
+
+}
+/*테블릿버전*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .miniimage {
+        width: 35vw;
+        height: 49vw;
+    }
+    .goodstext {
+        width: 35vw;
+    }
+}
+/*모바일버전*/
+@media all and (max-width: 767px) {
+    .miniimage {
+        width: 31vw;
+        height: 41vw;
+    }
+    .goodstext {
+        width: 31vw;
+    }
+}
