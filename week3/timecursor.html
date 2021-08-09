@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timecursor.css">
+    <script>
+        function formatAMPM(date) {
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var ampm = hours >= 12 ? 'pm' : 'am';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            minutes = minutes < 10 ? '0'+minutes : minutes;
+            var strTime = hours + ':' + minutes + ' ' + ampm;
+            return strTime;
+        }
+    </script>
+    <script>
+        function fn_location(e) {
+            var x = event.pageX;
+            var y = event.pageY;
+            console.log(x,y);
+        }
+    </script>
+</head>
+<body>
+<div class="shopfeed">
+    <h class="sftext">SHOP FEED</h>
+    <div class="time">
+        <script>
+            let today = new Date();
+            let hours = today.getHours(); // 시
+            let minutes = today.getMinutes();
+            document.write(formatAMPM(new Date));
+        </script>
+    </div>
+    <div class="cursor">
+        <div id='result' style='position:absolute;'></div>
+        <script type='text/javascript'>
+            if ( document.addEventListener ) {
+                document.addEventListener("mousemove",resultFun,false);
+            } else if ( document.attachEvent ) {
+                document.attachEvent("onmousemove",resultFun);
+            } else {
+                document.onmousemove = resultFun;
+            }
+            function resultFun(x) {
+                var xY = x.clientX +  " / "  + x.clientY ;
+                var positionLeft = x.clientX;
+                var positionTop = x.clientY;
+                document.getElementById('result').innerHTML = xY;
+            }
+        </script>
+    </div>
+    <h class="slash">＼</h>
+</div>
+
+</body>
+</html>
