@@ -21,7 +21,9 @@
 }
 /*테블릿버전*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
-
+.rightinfo {
+    display: none;
+}
 }
 /*모바일버전*/
 @media all and (max-width: 767px) {
