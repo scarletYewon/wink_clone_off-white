@@ -1,0 +1,98 @@
+/*피씨버전*/
+@media all and (min-width: 1024px) {
+
+    #menuBar {
+        margin: 0;
+        padding: 0;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 12px;
+    }
+
+    #menu {
+        display: block;
+        right: 0;
+        margin-right: 1vw;
+        margin-top: 16.5vw;
+        text-align: right;
+        position: fixed;
+        left: 15px;
+        top: 20px;
+    }
+
+    #sortBy{
+        color: black;
+        padding: 7px 12px;
+        border-radius: 0.4rem;
+        display: block;
+    }
+
+    #filters{
+        color: black;
+        padding: 7px 12px;
+        border-radius: 0.4rem;
+        display: inline-block;
+        margin-top: 16px;
+    }
+
+    #filters a {
+        color: black;
+        display: block;
+    }
+
+    #filters > #fil1 > p {
+        margin: 0;
+        display: inline;
+    }
+
+    #filters > #fil2 > p {
+        margin : 4px 0 0 0;
+    }
+
+    #sortBy a {
+        color: black;
+    }
+
+    .submenu {
+        display: none;
+        margin-top: 6px;
+    }
+    #sortBy:hover .submenu {
+        display: block;
+        margin-left: 65.5px;
+    }
+    #sortBy:hover .v {
+        transform: rotate(180deg);
+    }
+
+    #menu a{
+        text-decoration: none;
+    }
+
+    #menu a:hover{
+        text-decoration: underline;
+    }
+
+    .plus {
+        font-size: 0;
+        display: inline;
+    }
+
+    .v {
+        font-size: 5px;
+        margin-left: 1px;
+    }
+
+
+    #fil2{
+        margin-top: 4px;
+    }
+
+    #menu > #filters > #fil2 {
+        text-decoration: underline;
+    }
+
+    #menu > #filters > #fil2:hover {
+        text-decoration: none;
+    }
+
+}
